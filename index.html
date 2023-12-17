@@ -1,0 +1,97 @@
+<DOCTYPE html> 
+    <html lang="pt-br">
+      <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="html, css, js, freecodecamp, survey-form, projeto01, formulario">
+        <meta name="author" content="Nelson Martins">
+        <meta nme="description" content="Este é um formulário chamado survey-form, é o primeiro desafio do curso Responsive Web Design da FreeCodeCamp"> 
+        <!-- Fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title>Formulário de Contato</title>
+      </head>
+      <body>
+        <main id="principal"> <!-- Conteúdo principal -->
+          
+            <head id="cabecalho"> <!-- Cabeçalho -->
+                <h1 id="title">Ajuda, Dúvidas ou Sugestões? <br> Contate-nos!</h1>
+                <p id="description">Se precisar de suporte com HTML, CSS ou JavaScript, utilize o formulário abaixo para enviar suas perguntas. Estamos prontos para ajudar! Encontrou dúvidas ou tem sugestões? Estamos aqui para ouvir suas ideias e auxiliar no que for necessário.</p>
+            </head>
+
+            <form id="survey-form"> <!-- Formulário -->
+            
+            <div class="div-inputs"> <!-- Entradas1 -->
+
+                <label for="name" id="name-label" class="sub-title entradas">Nome:</label>
+                <input type="text" id="name" name="name" required placeholder="Digite seu nome" class="inputs">
+
+                <label for="email" id="email-label" class="sub-title entradas">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail" class="inputs">
+
+                <label for="email" id="number-label" class="sub-title entradas">Idade<span class="opcional">(Opcional):</span></label>
+                <input type="number" id="number" name="number" min="0" max="120" placeholder="Digite sua idade (opcional)" class="inputs">
+            </div>
+
+            <div class="menu-drop div-inputs"> <!-- Opções -->
+                <h2 class="sub-title">Motivo do seu contato:</h2>
+                <select id="dropdown">
+                  <option><span class="opcional">Selecione a opção desejada</span></option>
+                  <option><span class="opcional">Dúvidas</span></option>
+                  <option><span class="opcional">Sugestões</span></option>
+                </select>
+            </div>
+            
+            <div class="select-assuntos div-inputs"> <!-- Seleção de assuntos -->
+                <h2 class="sub-title">Essa dúvida ou sugestão é sobre?</h2>
+                <label for="html">
+                  <input type="radio" id="html" name="opcao" value="html">HTML
+                </label>
+                <label for="css">
+                  <input type="radio" id="css" name="opcao" value="css">CSS
+                </label>
+                <label for="js">
+                  <input type="radio" id="js" name="opcao" value="js">JavaScript
+                </label>
+                <label for="html-css">
+                  <input type="radio" id="html-css" name="opcao" value="html-css">HTML e CSS
+                </label>
+                <label for="html-css-js">
+                  <input type="radio" id="html-css-js" name="opcao" value="html-css-js">HTML, CSS e JavaScript
+                </label>
+            </div>
+            
+            <div class="select-checks div-inputs"> <!-- Seleção de objetivos -->
+                <h2 class="sub-title">Quais são os seus objetivos?</h2>
+                <label for="objetivo1">
+                  <input type="checkbox" value="1" id="objetivo1">Me tornar um desenvolvedor Front-end
+                </label>
+                <label for="objetivo2">
+                  <input type="checkbox" value="2"  id="objetivo2">Conseguir um emprego
+                </label>
+                <label for="objetivo3">
+                  <input type="checkbox" value="3"  id="objetivo3">Estudos acadêmicos
+                </label>
+                <label for="objetivo4">
+                  <input type="checkbox" value="4"  id="objetivo4">Outros
+                </label>
+            </div>
+            
+            <div class="area div-inputs"> <!-- Area para digitar a dúvida/sugestão -->
+                <label for="msg" class="sub-title">Descreva o que deseja?</label>
+                <textarea id="msg" name="msg" rows="10" cols="30" required resize="none"></textarea>
+            </div>
+            
+            <div class="enviar"> <!-- Botão de enviar -->
+                <button id="submit" value="Enviar">Enviar</button>
+            </div>
+
+          </form> 
+        </main>
+      </body>
+    </html
